@@ -9,14 +9,16 @@ class HomeCard extends StatelessWidget {
   Widget build(BuildContext context) => Container(
           child: Row(
         children: [
-          Column(
+          Flexible(
+              child: Column(
             children: [this.img],
-          ),
+          )),
           Column(
             children: [
-              Row(
+              Flexible(
+                  child: Row(
                 children: [Text(this.title)],
-              )
+              ))
             ],
           )
         ],
